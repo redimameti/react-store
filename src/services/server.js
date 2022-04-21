@@ -1,11 +1,6 @@
 import firestore from "../firebase.js";
 import shoes from "./shoes.js";
 
-export const createShoe = async (record) => {
-  const collectionRef = firestore.collection("shoes");
-  await collectionRef.add(record);
-};
-
 export const seedShoes = async () => {
   // https://firebase.google.com/docs/reference/js/v8/firebase.firestore.Firestore#collection
   // Getting Collection Reference instance for the shoes collection

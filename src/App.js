@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import {createShoe, seedShoes, getShoes} from "./services/server";
+import {getShoes} from "./services/server";
 import NavBar from "./components/NavBar";
 import styles from "./App.module.scss";
 import Features from "./components/Features/Features";
@@ -15,10 +15,6 @@ function App() {
 		const data = await getShoes();
 		setShoes(data);
 	};
-
-	useEffect(() => {
-		seedShoes();
-	}, []);
 
 	useEffect(() => {
 		getData();
