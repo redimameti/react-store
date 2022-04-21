@@ -1,0 +1,56 @@
+@import "./../../assets/palette.scss";
+@import "./../../assets/fonts.scss";
+
+.CarouselSection {
+	width: 100%;
+	background-color: $light-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+	&__Main {
+    margin: 30px;
+    width: 50%;
+	}
+
+  &__Header {
+		padding: 15px;
+		font-family: $mono;
+		position: relative;
+		text-align: center;
+		font-weight: 500;
+    color: $brown-var;
+	}
+	&__Header:before {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 1px;
+		background: #eae1d6;
+		left: 105%;
+		top: 50%;
+		position: absolute;
+	}
+
+	&__Header:after {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 1px;
+		background: #eae1d6;
+		right: 105%;
+		top: 50%;
+		position: absolute;
+	}
+
+  @media screen and (max-width: 455px) {
+    &__Header:after {
+      display: none;
+    }
+    &__Header:before {
+      display: none;
+    }
+  }
+}

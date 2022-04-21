@@ -1,0 +1,133 @@
+@import "./../../assets/palette.scss";
+@import "./../../assets/fonts.scss";
+
+.ProductPage {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	margin: 0px;
+	margin-top: 180px;
+	&__Container {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		width: 100%;
+		max-width: 1250px;
+		&__Img {
+			padding-left: 25px;
+			padding-right: 25px;
+			width: 50%;
+			img {
+				width: 100%;
+			}
+		}
+		&__Section {
+			width: 50%;
+			height: 100%;
+			padding-left: 50px;
+			padding-right: 25px;
+			&__MainDetails {
+				// display: flex;
+				flex-direction: column;
+				width: 100%;
+				&__Model {
+					font-family: $mono;
+					font-weight: 400;
+				}
+				&__Brand {
+					font-family: $serif;
+					font-style: italic;
+					font-weight: 300;
+					font-size: 1em;
+					color: $brown-var;
+				}
+				&__Price {
+					display: flex;
+					flex-wrap: nowrap;
+					align-items: center;
+					font-weight: 300;
+					font-family: sans-serif;
+					&__Tax {
+						font-size: 10px;
+						color: #8a8a8a;
+						margin-left: 25px;
+					}
+				}
+			}
+			&__Purchase {
+				&__Options {
+					display: flex;
+					justify-content: space-between;
+					width: 420px;
+					margin-bottom: 25px;
+					&__Dropdown {
+						width: 200px;
+						height: 30px;
+						border: 1px solid $black;
+					}
+				}
+				&__Buy {
+          display: flex;
+					justify-content: space-between;
+					width: 420px;
+					margin-bottom: 25px;
+					&__Button {
+						width: 200px;
+						height: 30px;
+						background-color: $gold;
+						border: none;
+						font-family: $mono;
+						font-size: 0.8em;
+						color: $white;
+					}
+          &__Button:hover {
+            background-color: $black;
+            cursor: not-allowed;
+            transition: ease 0.2s;
+          }
+
+					&__Qty {
+            display: flex;
+            text-align: left;
+            align-items: center;
+            width: 200px;
+						height: 30px;
+            border: none;
+						font-family: $mono;
+						font-size: 0.8em;
+					}
+				}
+			}
+      &__Description {
+        margin-top: 50px;
+        width: 90%;
+        &__Header {
+          font-family: $mono;
+          font-weight: 400;
+          font-size: 1em;
+          text-decoration: underline;
+        }
+        &__Para {
+          font-size: 0.75em;
+          color: $brown-var;
+        }
+      }
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		&__Container {
+			width: 90%;
+			flex-direction: column;
+			align-items: center;
+			&__Img {
+				width: 100%;
+			}
+			&__Section {
+				width: 100%;
+			}
+		}
+	}
+
+}

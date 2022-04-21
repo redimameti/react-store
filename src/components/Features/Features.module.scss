@@ -1,0 +1,47 @@
+@import "./../../assets/palette.scss";
+@import "./../../assets/fonts.scss";
+
+.Features {
+  height: auto;
+	min-height: 80px;
+	width: 100%;
+  display: flex;
+  justify-content: center;
+	background-color: $white;
+  &__Container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1250px;
+    &__Block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      color: $brown-var;
+      width: auto;
+      &__Icon {
+        color: $gold;
+        padding-right: 15px;
+      }
+      &__Text {
+        font-family: $mono;
+        font-size: 0.7em;
+      }
+    }
+  }
+	
+
+  @media screen and (max-width: 735px) {
+    &__Container {
+      flex-direction: column;
+      &__Block {
+        padding: 10px 0px;
+      }
+    }
+  }
+}

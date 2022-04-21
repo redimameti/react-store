@@ -1,0 +1,57 @@
+@import "./../../assets/palette.scss";
+@import "./../../assets/fonts.scss";
+
+.ProductCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	height: 415px;
+
+	&__Text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: $brown-var;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		&__Brand {
+			margin: 0px;
+			padding: 0px;
+			font-family: $mono;
+			font-size: 1em;
+			font-weight: 400;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			padding-bottom: 10px;
+		}
+
+		&__Model {
+			font-family: $serif;
+			font-style: italic;
+			font-size: 0.8em;
+			color: $brown-var;
+			padding-bottom: 10px;
+		}
+
+		&__Price {
+			font-weight: 300;
+			font-size: 0.85em;
+		}
+	}
+	&__Text:hover .ProductCard__Text__Brand {
+		color: $gold;
+	}
+	&__Text:hover .ProductCard__Text__Price {
+		color: $gold;
+	}
+	img {
+		width: 100%;
+	}
+}

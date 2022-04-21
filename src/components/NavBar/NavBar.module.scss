@@ -1,0 +1,70 @@
+@import "./../../assets/palette.scss";
+@import "./../../assets/fonts.scss";
+
+.NavBar {
+	background-color: $brown;
+	// background-color: transparent;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 80px;
+	position: fixed;
+	top: 0;
+
+	&__Container {
+		width: 100%;
+		max-width: 1250px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		&__Header {
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			padding-left: 25px;
+			&__Text {
+				color: $white;
+				margin: 0px;
+				font-family: $serif-sc;
+				font-size: 1.5em;
+				font-weight: 400;
+			}
+			&__Icon {
+				color: $gold;
+				padding-right: 25px;
+			}
+		}
+
+		&__Links {
+			font-family: $mono;
+			font-size: 0.7em;
+			a {
+				padding: 0px 20px;
+				text-decoration: none;
+				color: $white;
+				cursor: not-allowed;
+			}
+		}
+		&__Icons {
+			display: flex;
+			width: 150px;
+			justify-content: space-between;
+			padding-right: 25px;
+			&__Icon {
+				color: $white;
+			}
+			&__Icon:hover {
+				cursor: not-allowed;
+			}
+		}
+	}
+	@media screen and (max-width: 900px) {
+		&__Container {
+			width: 90%;
+			&__Links {
+					display: none;
+			}
+		}	
+	}
+}

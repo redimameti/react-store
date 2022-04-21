@@ -1,0 +1,51 @@
+@import "./../../assets/palette.scss";
+@import "./../../assets/fonts.scss";
+
+.HeroSection {
+	background-color: #9f9d9b;
+	background-image: url("./../../images/hero-lg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 0;
+	top: 0;
+	padding-top: 48.6%;
+
+	&__Container {
+    display: none;
+		width: 100%;
+		max-width: 1250px;
+    position: absolute;
+    justify-content: flex-end;
+    bottom: 48.6%;
+		&__Inner {
+			width: 425px;
+			display: flex;
+			flex-direction: column;
+			text-transform: uppercase;
+			font-family: $mono;
+			color: $white;
+			text-align: right;
+			align-items: flex-end;
+			h3 {
+				font-size: 1.3em;
+			}
+			p {
+				font-size: 0.85em;
+			}
+			button {
+				background-color: $gold;
+				color: $white;
+        font-weight: 600;
+				padding: 10px 0px;
+				width: 200px;
+				border: none;
+			}
+		}
+	}
+
+	@media screen and (max-width: 858px) {
+		background-image: url("./../../images/hero-sm.jpg");
+		padding-top: 163%;
+	}
+}
