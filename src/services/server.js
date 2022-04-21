@@ -1,5 +1,5 @@
 import firestore from "../firebase.js";
-import shoes from "./shoes.js";
+import products from "./shoes.js";
 
 export const seedShoes = async () => {
   // https://firebase.google.com/docs/reference/js/v8/firebase.firestore.Firestore#collection
@@ -15,7 +15,7 @@ export const seedShoes = async () => {
 
   // https://firebase.google.com/docs/reference/js/v8/firebase.firestore.CollectionReference#add
   // Grabbing every shoe object in our array and adding it to the 'shoes' collection (id db)
-  const promises = shoes.map(async (shoe) => {
+  const promises = products.map(async (shoe) => {
       return await collectionRef.add(shoe);
   });
 

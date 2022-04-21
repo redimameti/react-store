@@ -1,4 +1,4 @@
-const shoes = [
+const products = [
 	{
 		brand: "Edward Green",
 		model: "Albert Double Monk Velvet",
@@ -246,41 +246,6 @@ const shoes = [
 		],
 	},
 	{
-		brand: "brandName",
-		model: "modelName",
-		price: "$1000.00",
-		image: "url",
-		isFav: false,
-		variants: [
-			{
-				color: "color1",
-				sizes: [
-					{
-						size: 1,
-						qty: 5,
-					},
-					{
-						size: 2,
-						qty: 7,
-					},
-				],
-			},
-			{
-				color: "color2",
-				sizes: [
-					{
-						size: 1,
-						qty: 3,
-					},
-					{
-						size: 2,
-						qty: 11,
-					},
-				],
-			},
-		],
-	},
-	{
 		brand: "Quoddy",
 		model: "Classic Boat Shoe Chromexcel",
 		price: "$495.00",
@@ -387,4 +352,4 @@ const shoes = [
 	},
 ];
 
-export default shoes;
+export default products;

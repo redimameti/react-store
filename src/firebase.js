@@ -7,12 +7,12 @@ import "firebase/compat/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-	apiKey: "AIzaSyB3cZncYx6aRfVbLfO1xgO-y3mdo1FT5X0",
-	authDomain: "react-shop-7f48f.firebaseapp.com",
-	projectId: "react-shop-7f48f",
-	storageBucket: "react-shop-7f48f.appspot.com",
-	messagingSenderId: "77614059527",
-	appId: "1:77614059527:web:b45a3cfcd40e1de9631aa2",
+	apiKey: "AIzaSyBnLwEt0m5lzGhTbYkvcPeSgm7hgBYYfQ8",
+	authDomain: "wingtip-shoes-dc4cd.firebaseapp.com",
+	projectId: "wingtip-shoes-dc4cd",
+	storageBucket: "wingtip-shoes-dc4cd.appspot.com",
+	messagingSenderId: "116243243237",
+	appId: "1:116243243237:web:be5480d71909c44a19340c",
 };
 
 firebase.initializeApp(firebaseConfig);

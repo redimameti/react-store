@@ -2,6 +2,7 @@ import {useState, useEffect} from "react";
 import {getShoes} from "./services/server";
 import NavBar from "./components/NavBar";
 import styles from "./App.module.scss";
+import products from "./services/shoes";
 import Features from "./components/Features/Features";
 import CarouselSection from "./containers/CarouselSection/CarouselSection";
 import HeroSection from "./components/HeroSection/HeroSection";
@@ -24,12 +25,12 @@ function App() {
 
 	return (
 		<div className={styles.App}>
-			<ProductPage />
-			{/* <NavBar />
+			{/* <ProductPage /> */}
+			<NavBar />
 			<HeroSection />
 			<Features />
 			<CarouselSection />
-      <ProductGrid/> */}
+			<ProductGrid shoes={products} />
 		</div>
 	);
 }
